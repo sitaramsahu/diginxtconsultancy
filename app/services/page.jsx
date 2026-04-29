@@ -8,6 +8,7 @@ export default function Services() {
   const services = [
     {
       category: "Loan & Finance Services",
+      link: "/services/loan-finance",
       icon: "💰",
       description: "Complete support from application to approval",
       items: [
@@ -19,6 +20,7 @@ export default function Services() {
     },
     {
       category: "Registration Services",
+      link: "/services/business-registration",
       icon: "🏢",
       description: "Fast & affordable service",
       items: [
@@ -29,12 +31,14 @@ export default function Services() {
     },
     {
       category: "Subsidy & Grants",
+      link: "/services/subsidy-grants",
       icon: "📊",
       description: "We help you claim benefits",
       items: ["MSME Subsidy", "State Govt Schemes", "Capital Subsidy"],
     },
     {
       category: "Agriculture Services",
+      link: "/services/agriculture",
       icon: "🌾",
       description: "Farmer focused support",
       items: [
@@ -45,6 +49,7 @@ export default function Services() {
     },
     {
       category: "Health Services",
+      link: "/services/health",
       icon: "🏥",
       description: "Treatment financing support",
       items: ["Ayushman Card", "Health Loan", "Health Insurance"],
@@ -96,7 +101,7 @@ export default function Services() {
                   <span className="text-4xl">{service.icon}</span>
                   <div>
                     <h3 className="text-2xl font-bold text-yellow-400">
-                      {service.category}
+                      <Link href={service.link}>{service.category}</Link>
                     </h3>
                     <p className="text-gray-300 text-sm mt-2">
                       {service.description}
