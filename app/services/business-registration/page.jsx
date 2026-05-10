@@ -86,6 +86,15 @@ export default function Services() {
               </div>
             ))}
           </div>
+          {/* Application Model */}
+          {/* <div className="max-w-2xl mx-auto text-center py-20 px-4">
+            <Link
+              href="/business-registration/apply"
+              className="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-300 transition"
+            >
+              Fill The Form{" "}
+            </Link>
+          </div> */}
         </div>
       </section>
 

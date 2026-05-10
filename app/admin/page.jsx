@@ -111,6 +111,17 @@ export default function AdminDashboard() {
             Track all invoices and revenue
           </p>
         </div>
+
+        {/* Applications */}
+        <div
+          onClick={() => router.push("/admin/applications")}
+          className="cursor-pointer bg-gradient-to-br from-yellow-400/10 to-transparent border border-yellow-400/20 p-6 rounded-2xl hover:scale-105 transition"
+        >
+          <h2 className="text-xl font-semibold mb-2">🧾 Applications</h2>
+          <p className="text-gray-400 text-sm">
+            Track all applications and their status
+          </p>
+        </div>
       </div>
 
       {/* FOOTER */}
